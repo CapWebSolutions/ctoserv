@@ -1,0 +1,166 @@
+/*
+    User custom styles
+	Customizations Author: Cap Web Solutions
+	Customizations Author URI: http://capwebsolutions.com
+	Customizations Version 1.0
+*/
+
+
+/*
+	Theme Name: Agency Pro Theme
+	Theme URI: http://my.studiopress.com/themes/agency/
+	Description: Represent your professional services with confidence and clarity by harnessing the streamlined professionalism of the Agency theme.
+	Author: StudioPress
+	Author URI: http://www.studiopress.com/
+	Version: 3.1.2
+ 
+	Tags: black, orange, white, one-column, two-columns, three-columns, responsive-layout, custom-menu, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready, premise-landing-page
+ 
+	Template: genesis
+	Template Version: 2.1
+ 
+	License: GPL-2.0+
+	License URI: http://www.opensource.org/licenses/gpl-license.php
+*/
+
+
+/* Table of Contents
+
+- Theme Colors
+	- CTO Services Custom Red
+- Navigation
+	- Custom Footer Menu Styling
+
+- Structure and Layout
+	- site tagline
+- Plugin Changes
+	- Genesis eNews Extended  (button coloring to match Simple Social Icons)
+- Media Query
+	- Split Footer Styling for small screens
+*/
+
+
+/* CTO Services Custom Red
+ * Original Agency Pro red = #de3233
+--------------------------------------------- */
+
+.ctoservices-custom-red .genesis-nav-menu .current-menu-item > a,
+.ctoservices-custom-red .genesis-nav-menu .v .current-menu-item > a:hover,
+.ctoservices-custom-red .genesis-nav-menu a:hover,
+.ctoservices-custom-red .site-title a:hover,
+.ctoservices-custom-red a,
+.ctoservices-custom-red.agency-pro-home .featured-content a:hover {
+	color: #e51e25;
+}
+
+.ctoservices-custom-red .archive-pagination li a:hover,
+.ctoservices-custom-red .archive-pagination li.active a,
+.ctoservices-custom-red .breadcrumb a,
+.ctoservices-custom-red .genesis-nav-menu a,
+.ctoservices-custom-red .home-top a:hover,
+.ctoservices-custom-red .site-title a,
+.ctoservices-custom-red a:hover.button,
+.ctoservices-custom-red a.button {
+	color: #fff;
+}
+
+.ctoservices-custom-red .genesis-nav-menu .sub-menu .current-menu-item > a,
+.ctoservices-custom-red .site-footer a {
+	color: #999;
+}
+
+.ctoservices-custom-red .archive-pagination a,
+.ctoservices-custom-red .entry-title a,
+.ctoservices-custom-red .entry-title,
+.ctoservices-custom-red .home-top a,
+.ctoservices-custom-red .site-footer a:hover,
+.ctoservices-custom-red a:hover {
+	color: #333;
+}
+
+.ctoservices-custom-red .genesis-nav-menu a:hover,
+.ctoservices-custom-red .genesis-nav-menu .current-menu-item > a,
+.ctoservices-custom-red .genesis-nav-menu .v .current-menu-item > a:hover {
+	border-color: #e51e25;
+}
+
+.ctoservices-custom-red .archive-pagination li a:hover,
+.ctoservices-custom-red .archive-pagination li.active a,
+.ctoservices-custom-red a:hover.button,
+.ctoservices-custom-red button:hover,
+.ctoservices-custom-red input:hover[type="button"],
+.ctoservices-custom-red input:hover[type="reset"],
+.ctoservices-custom-red input:hover[type="submit"],
+body.ctoservices-custom-red {
+	background-color: #e51e25;
+}
+
+/* Need a little bit more width on the main nav to account 
+ * for the huge menu titles
+ */
+.site-header {
+    min-height: 90px;
+    padding-top: 15px;
+}
+.site-header .widget-area {
+	width: 835px;
+}
+
+/* Custom Footer Menu Styling
+--------------------------------------------- */
+
+.site-footer .nav-footer a {
+	border: none;
+	padding: 10px;
+	color: #fff;
+	background-color: #333;
+}
+.site-footer .nav-footer a:hover{
+		color: #fff;
+		background-color: #e51e25;
+}
+
+
+/*
+ * A little styling to help out the different backstretched images on pages other than the front page. 
+ * We need to add minimum body class to static Pages or otherwise the tagline will not be pushed down 
+ * via the below CSS.
+ */
+.agency-pro .site-tagline {
+margin-top: 600px;
+margin-top: 60rem;
+}
+
+/* Genesis eNews Extended - changes to color of box, font, font-weight
+--------------------------------------------- */
+
+.enews-widget {
+	color: #666666;
+}
+
+.enews-widget input[type="submit"] {
+	background-color: #eeeeee;
+	color: #666666;
+	margin: 0;
+	width: 100%;
+	font-weight: 700;
+}
+
+.enews-widget input:hover[type="submit"] {
+	background-color: #e51e25;
+	color: #fff;
+	font-weight: 900;
+	}
+
+
+/* Split footer styling for small screen
+--------------------------------------------- */	
+@media only screen and (max-width: 500px) {
+	.site-footer .alignleft {
+	margin-bottom: 3rem;
+	}
+	.site-footer .alignleft, .site-footer .alignright {
+	text-align: center;
+	float: none;
+	}
+}
